@@ -9,8 +9,6 @@ endif
 
 " Add ChatGPT dependencies
 python3 << EOF
-import sys
-sys.path.append(vim.eval('expand(g:chatgpt_venv_path)'))
 try:
     import openai
 except ImportError:
